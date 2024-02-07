@@ -3,6 +3,8 @@ import { MenuIcon } from "lucide-react";
 import Link from "next/link";
 import React, { useMemo } from "react";
 import Image from "next/image";
+import CustomButton from "@/components/common/button";
+import CustomButton2 from "@/components/common/button2";
 
 import logoSvg from "../../../../../public/logo.svg";
 

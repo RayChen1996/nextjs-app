@@ -1,5 +1,5 @@
 import React from "react";
-
+import ShortCut from "@/components/common/ShortCut";
 import Footer from "./components/Footer";
 
 interface BasicLayoutProps {
@@ -12,6 +12,7 @@ export default function BasicLayout({ children }: BasicLayoutProps) {
     <div className="flex flex-col bg-[#F6E4CD] min-h-screen">
       <main className=" flex-1">{children}</main>
       <Footer />
+      <ShortCut />
     </div>
   );
 }

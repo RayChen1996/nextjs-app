@@ -21,7 +21,7 @@ export default function Home() {
             backgroundPositionY: "-179px",
           }}
         >
-          <TopBar />
+          <TopBar showBackgroundColor={false} />
           <LogoImage />
           <RewardPanel />
           <ButtonGroup />

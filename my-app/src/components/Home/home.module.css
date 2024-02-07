@@ -1,0 +1,13 @@
+.swiper-button-disabled {
+  display: none;
+}
+.custom-swiper-button-next {
+  /* Your custom styles go here */
+  background-color: rgb(12, 155, 155);
+}
+
+/* Custom styles for the prev button */
+.custom-swiper-button-prev {
+  /* Your custom styles go here */
+  background-color: rgb(255, 13, 0);
+}

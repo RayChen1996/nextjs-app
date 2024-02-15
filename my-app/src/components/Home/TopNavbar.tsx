@@ -12,14 +12,14 @@ export default function TopNavbar({ showBackgroundColor }: NavProp) {
     <div
       className={clsx(
         "flex  justify-between   ",
-        showBackgroundColor ? "bg-[#FAF1E6]" : ""
+        showBackgroundColor ? "bg-[#FAF1E6]" : "  bg-gradient-to-b  from-[#5D5D5D] to-[#14557100]  "
       )}
     >
       <div className=" flex">
         <CustomButton label={"抽獎點數"} point={5000} />
         <CustomButton label={"交易點數"} point={10000} />
       </div>
-      <div className="  flex">
+      <div className="  flex  ">
         <CustomButton2
           hasIcon={true}
           NotifyCount={10}

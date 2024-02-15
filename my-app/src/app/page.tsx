@@ -4,6 +4,12 @@ import RewardPanel from "@/components/Home/RewardPanel";
 import Products from "@/components/Home/Product";
 import ButtonGroup from "@/components/Home/ButtonGroup";
 import BasicLayout from "@/components/Layout/Basic";
+import {
+  DesktopContainer,
+  TabletAndBelowContainer,
+} from "@/components/MediaContainer/MediaContainer";
+import MobileHeaderNav from "@/components/Layout/MobileHeaderNav";
+
 const bgclass = "     background-position-y: -88px; ";
 export default function Home() {
   return (
@@ -21,10 +27,35 @@ export default function Home() {
             backgroundPositionY: "-179px",
           }}
         >
-          <TopBar showBackgroundColor={false} />
+              {/* NOTE Header */}
+      <DesktopContainer>
+      <TopBar showBackgroundColor={false} />
+      </DesktopContainer>
+      <TabletAndBelowContainer>
+        
+         <MobileHeaderNav />
+     
+      </TabletAndBelowContainer>
+      {/* <DisplayHeader /> */}
+
+
+          
           <LogoImage />
           <RewardPanel />
-          <ButtonGroup />
+
+
+
+          <DesktopContainer>
+            <ButtonGroup />
+          </DesktopContainer>
+          <TabletAndBelowContainer>
+        
+              <></>
+     
+          </TabletAndBelowContainer>
+
+
+          
           <Products />
         </div>
       </main>

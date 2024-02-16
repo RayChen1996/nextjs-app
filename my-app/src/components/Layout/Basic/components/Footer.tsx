@@ -1,5 +1,4 @@
-import Link from "next/link";
-import { MailIcon, MapPinnedIcon, PhoneIcon } from "lucide-react";
+
 import React from "react";
 
 export default function Footer() {

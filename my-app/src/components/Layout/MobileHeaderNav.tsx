@@ -182,14 +182,8 @@ const NavListItem = (props: NavItemProps) => {
             <h4 className={clsx(open ? "text-thirdly" : "text-text-main")}>
               {label}
             </h4>
-            {isSublist && (
-              <NavArrowRight
-                className={clsx(
-                  "transition-transform",
-                  open ? "rotate-90" : "rotate-0"
-                )}
-              />
-            )}
+          
+          
           </div>
         </a>
       ) : (

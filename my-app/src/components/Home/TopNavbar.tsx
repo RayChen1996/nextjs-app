@@ -19,7 +19,7 @@ export default function TopNavbar({ showBackgroundColor }: NavProp) {
         <CustomButton label={"抽獎點數"} point={5000} />
         <CustomButton label={"交易點數"} point={10000} />
       </div>
-      <div className="  flex  ">
+      <div className="  flex   mt-3  ">
         <CustomButton2
           hasIcon={true}
           NotifyCount={10}

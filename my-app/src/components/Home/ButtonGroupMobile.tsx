@@ -16,9 +16,9 @@ export default function CenterImage() {
 
         <div className="flex justify-center gap-2">
           <CustomButton2
-            IsSelect={true}
+            isSelect={true}
             hasIcon={false}
-            NotifyCount={10}
+            notifyCount={10}
             showIcon={false}
             label={"商品分類"}
           />

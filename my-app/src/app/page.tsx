@@ -19,13 +19,13 @@ export default function Home() {
       <main
         className="  bg-cover  bg-center bg-no-repeat  "
         style={{
-          backgroundImage: `url(${"/images/bg2.svg"})`,
+          backgroundImage: `url(${"/images/bg3.svg"})`,
         }}
       >
         <div
-          className=" bg-cover  bg-top   bg-no-repeat bg-[url('/images/bg3.svg')] md:bg-[url('/images/bg2.svg')] lg:bg-[url('/images/bg2.svg')] xl:bg-[url('/images/bg2.svg')]"
+          className=" bg-cover  bg-top   bg-no-repeat "
           style={{
-            // backgroundImage: `url(${"/images/homebg.png"})`,
+            backgroundImage: `url(${"/images/homebg.png"})`,
             backgroundPositionY: "-179px",
           }}
         >

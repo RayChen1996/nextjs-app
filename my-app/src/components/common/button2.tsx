@@ -4,16 +4,16 @@ export interface ButtonProp {
   label: string;
   hasIcon: boolean;
   showIcon: boolean;
-  NotifyCount: number;
-  IsSelect?: Boolean;
+  notifyCount: number;
+  isSelect?: Boolean;
   onclick?: () => void;
 }
 export default function CustomButton2({
   label,
   showIcon = false,
   hasIcon = false,
-  NotifyCount = 0,
-  IsSelect = false,
+  notifyCount = 0,
+  isSelect = false,
   onclick,
 }: ButtonProp) {
   return (
@@ -23,15 +23,15 @@ export default function CustomButton2({
     >
       {showIcon && (
         <span className=" absolute text-white font-bold top-0 right-3  rounded-full  text-centers bg-[#F4511E] w-8 h-8 flex justify-center items-center ">
-          {NotifyCount}
+          {notifyCount}
         </span>
       )}
 
-      <span className="  text-lg flex mx-auto      h-full    justify-center  items-center gap-2 ">
+      <span className="  text-lg flex mx-auto  justify-center  items-center gap-2 ">
         {hasIcon && <Svg />}
         {label}
-        {IsSelect && (
-          <span className="  flex mx-auto      h-full    justify-center  items-center gap-2 ">
+        {isSelect && (
+          <span className="  flex mx-auto    justify-center  items-center gap-2 ">
             <ArrowSvg />
           </span>
         )}

@@ -15,7 +15,7 @@ export default function ShortCut() {
           <MessageIcon />
         </div>
 
-        <div className={clsx(iconContainerCss, "bg-transparent")}>
+        <div className={clsx("bg-transparent")}>
           <ScrollTop />
         </div>
       </div>
@@ -48,8 +48,10 @@ function ScrollTop() {
   return (
     <div
       className={clsx(
-        "bg-primary rounded-full  w-[35px] h-[35px] flex items-center justify-center cursor-pointer transition-all duration-300 ",
-        showScrollTop ? "opacity-1" : "opacity-0"
+        " ",
+        showScrollTop
+          ? "opacity-1 bg-primary rounded-full  w-[35px] h-[35px] flex items-center justify-center cursor-pointer transition-all duration-300"
+          : "opacity-0"
       )}
       onClick={handleScrollTop}
     >

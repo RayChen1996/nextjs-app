@@ -28,12 +28,13 @@ export default function RewardPanel() {
       <div
         className="  bg-contain bg-center h-60         bg-no-repeat "
         style={{
-          backgroundImage: `url(${"/images/rewardbg.png"})`,
+          backgroundImage: `url(${"/images/rewardbgMobile.png"})`,
           margin: "0 auto",
         }}
       >
         {/* TODO Swipper Components */}
-        <div className=" mx-20">
+
+        <div className=" mx-20 ">
           <Swiper
             direction="horizontal" // Set direction to horizontal
             centeredSlides={true}

@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { type ButtonProp } from "@/components/common/button";
 import CustomButton from "@/components/common/button";
@@ -12,7 +13,9 @@ export default function TopNavbar({ showBackgroundColor }: NavProp) {
     <div
       className={clsx(
         "flex  justify-between   ",
-        showBackgroundColor ? "bg-[#FAF1E6]" : "  bg-gradient-to-b  from-[#5D5D5D] to-[#14557100]  "
+        showBackgroundColor
+          ? "bg-[#FAF1E6]"
+          : "  bg-gradient-to-b  from-[#5D5D5D] to-[#14557100]  "
       )}
     >
       <div className=" flex">
@@ -22,19 +25,19 @@ export default function TopNavbar({ showBackgroundColor }: NavProp) {
       <div className="  flex   mt-3  ">
         <CustomButton2
           hasIcon={true}
-          NotifyCount={10}
+          notifyCount={10}
           showIcon={true}
           label={"開獎"}
         />
         <CustomButton2
           hasIcon={false}
-          NotifyCount={1}
+          notifyCount={1}
           showIcon={false}
           label={"購物車"}
         />
         <CustomButton2
           hasIcon={false}
-          NotifyCount={1}
+          notifyCount={1}
           showIcon={false}
           label={"會員中心"}
         />

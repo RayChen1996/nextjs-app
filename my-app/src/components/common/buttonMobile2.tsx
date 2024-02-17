@@ -1,4 +1,5 @@
-import IconSvg from "@/components/Svg/MobileIcon2";
+import Svg from "@/components/Svg/MobileIcon2";
+import ButtonSvg from "@/components/Svg/Button";
 export interface ButtonProp {
   label: string;
   onclick?: () => void;
@@ -7,11 +8,12 @@ export default function CustomButton({ label, onclick }: ButtonProp) {
   return (
     <div
       onClick={onclick}
-      className=" cursor-pointer   mx-auto text-center  bg-no-repeat  h-24  w-60     justify-center items-center   flex    text-white font-bold "
-      style={{ backgroundImage: `url(${"/images/buttton.png"})` }}
+      className="rounded-custom cursor-pointer relative bg-no-repeat h-24    justify-center items-center flex  text-white font-bold "
     >
-      <IconSvg />
-      <span className="   text-lg    ">{label}</span>
+      <ButtonSvg />
+      <Svg className=" absolute  left-4 " />
+
+      <span className="text-lg absolute m-auto left-10 ">{label}</span>
     </div>
   );
 }

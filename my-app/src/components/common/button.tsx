@@ -1,3 +1,5 @@
+import ButtonSvg from "@/components/Svg/Button";
+
 export interface ButtonProp {
   label: string;
   point: number;
@@ -7,12 +9,12 @@ export default function CustomButton({ label, onclick, point }: ButtonProp) {
   return (
     <div
       onClick={onclick}
-      className="cursor-pointer text-center bg-no-repeat h-24 w-64 justify-center items-center flex flex-col text-white font-bold"
-      style={{ backgroundImage: `url(${"/images/buttton.png"})` }}
+      className=" relative cursor-pointer text-center bg-no-repeat h-24 w-64 justify-center items-center flex flex-col text-white font-bold"
     >
-      <span className="text-sm mx-auto px-24 w-full">{label}</span>
-      {/* <br /> */}
-      <span className="text-xl mx-auto px-24">{point}</span>
+      <ButtonSvg className=" absolute " />
+      <span className="absolute text-sm   left-0 top-6  w-full">{label}</span>
+
+      <span className="absolute text-xl bottom-7 ">{point}</span>
     </div>
   );
 }

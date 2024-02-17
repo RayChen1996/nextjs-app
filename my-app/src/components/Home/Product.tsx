@@ -6,6 +6,7 @@ import { faker } from "@faker-js/faker";
 
 import { type Product } from "@/schema/products";
 import ProductItem from "@/components/ListItem/ProductItem";
+import Pagintaion from "@/components/Pagintaion";
 
 export default function CenterImage() {
   const generateFakeData = (): Array<Partial<Product>> => {
@@ -32,6 +33,7 @@ export default function CenterImage() {
           ))}
         </ProductGrid>
       </div>
+      <Pagintaion count={4} />
     </div>
   );
 }

@@ -29,7 +29,9 @@
     "remark-html": "^16.0.1",
     "swiper": "^11.0.6",
     "zod": "^3.22.4",
-    "react-responsive": "^9.0.2"
+    "react-responsive": "^9.0.2",
+    "material-icons": "^1.13.12"
+
 
   },
   "devDependencies": {

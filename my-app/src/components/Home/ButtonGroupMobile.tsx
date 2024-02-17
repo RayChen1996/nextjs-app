@@ -14,7 +14,7 @@ export default function CenterImage() {
           <button className="btn btn-primary-content rounded-full">價格</button>
         </div>
 
-        <div className="flex justify-center gap-2">
+        <div className="flex justify-end  ">
           <CustomButton2
             isSelect={true}
             hasIcon={false}

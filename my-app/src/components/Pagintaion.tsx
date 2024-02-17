@@ -53,8 +53,8 @@ export default memo(function Pagintaion(props: PagintaionProps) {
   }, [replace, pathname, createQueryString, isIllegalPage, hastPageParams]);
 
   return (
-    <div className="flex justify-center">
-      <div className="join">
+    <div className="flex justify-center  ">
+      <div className="join m-2">
         {items.map((item, index) => (
           <PaginationItem key={"page" + index} {...item} />
         ))}
@@ -85,7 +85,7 @@ const PaginationItem = memo(function PaginationItem({
     return (
       <button
         className={clsx(
-          "join-item",
+          "join-item ",
           "btn",
           "btn-disabled",
           "btn-md",
@@ -103,12 +103,12 @@ const PaginationItem = memo(function PaginationItem({
       onClick={onClick}
       disabled={disabled}
       className={clsx(
-        "join-item",
+        "join-item m-2",
         "btn",
         "btn-md",
         "max-sm:btn-sm",
-        "max-md:btn-md",
-        selected ? "btn-active" : null
+        "max-md:btn-md text-[#145571]",
+        selected ? "btn-active bg-[#145571] text-white" : null
       )}
     >
       {type === "page" && page}

@@ -6,7 +6,7 @@ import MessageIcon from "@/components/Svg/message";
 import ArrowUpIcon from "@/components/Svg/backtop";
 export default function ShortCut() {
   const iconContainerCss =
-    "w-[60px] h-[60px] bg-white   bg-primary cursor-pointer flex items-center justify-center rounded-full hover:bg-primary-dark";
+    "w-[60px] h-[60px] bg-white bg-primary cursor-pointer flex items-center justify-center rounded-full hover:bg-primary-dark";
 
   return (
     <div className={"fixed bottom-[45px] right-5 z-10"}>
@@ -50,7 +50,7 @@ function ScrollTop() {
       className={clsx(
         " ",
         showScrollTop
-          ? "opacity-1 bg-primary rounded-full  w-[35px] h-[35px] flex items-center justify-center cursor-pointer transition-all duration-300"
+          ? "opacity-1 bg-primary rounded-full w-[35px] h-[35px] flex items-center justify-center cursor-pointer transition-all duration-300"
           : "opacity-0"
       )}
       onClick={handleScrollTop}

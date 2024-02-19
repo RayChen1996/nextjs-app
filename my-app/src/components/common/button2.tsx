@@ -24,21 +24,19 @@ export default function CustomButton2({
     // 手機板商品分類
     <div className="dropdown dropdown-bottom dropdown-end">
       <div tabIndex={0} role="button" className="">
-        <div className=" relative  cursor-pointer     bg-no-repeat  h-[84px]   w-64     justify-center items-center   flex  flex-col text-[#145571] font-bold ">
-          {/* <Image alt="feature-icon" src={ButtonSvg} fill /> */}
-
-          <ButtonSvg3 className="  " />
+        <div className="relative cursor-pointer bg-no-repeat h-[84px] w-64 justify-center items-center flex flex-col text-[#145571] font-bold ">
+          <ButtonSvg3 />
           {showIcon && (
-            <span className=" absolute text-white font-bold top-0   rounded-full  text-centers bg-[#F4511E] w-8 h-8 flex justify-center items-center ">
+            <span className="absolute text-white font-bold top-0 rounded-full text-centers bg-[#F4511E] w-8 h-8 flex justify-center items-center ">
               {notifyCount}
             </span>
           )}
 
-          <span className=" absolute text-lg flex mx-auto  justify-center  items-center ">
+          <span className=" absolute top-6 left-23 text-lg flex mx-auto justify-center items-center ">
             {hasIcon && <Svg />}
             {label}
             {isSelect && (
-              <span className="  flex mx-auto    justify-center  items-center  ">
+              <span className="flex mx-auto justify-center items-center">
                 <ArrowSvg />
               </span>
             )}
@@ -47,7 +45,7 @@ export default function CustomButton2({
       </div>
       <ul
         tabIndex={0}
-        className=" text-[#145571] dropdown-content z-[1] menu p-2 shadow  bg-[#FCF2DA]  rounded-box w-52"
+        className="text-[#145571] dropdown-content z-[1] menu p-2 shadow bg-[#FCF2DA] rounded-box w-52"
       >
         <li>
           <a>商城推薦</a>
@@ -62,21 +60,18 @@ export default function CustomButton2({
     </div>
   ) : (
     // 桌面板
-    <div className="  cursor-pointer relative   bg-no-repeat  h-[84px] 　  w-40   justify-center items-center   flex  flex-col text-[#145571] font-bold ">
-      {/* <ButtonSvg className=" absolute" /> */}
-      {/* <ButtonSvg className="  absolute" /> */}
-      <ButtonSvg className="  " />
+    <div className="cursor-pointer relative bg-no-repeat h-[84px] w-28 justify-center items-center flex flex-col text-[#145571] font-bold">
+      <ButtonSvg />
       {showIcon && (
-        <span className=" absolute text-white font-bold top-0 right-3  rounded-full  text-centers bg-[#F4511E] w-8 h-8 flex justify-center items-center ">
+        <span className="absolute text-white font-bold top-1 right-0 rounded-full text-centers bg-[#F4511E] w-8 h-8 flex justify-center items-center ">
           {notifyCount}
         </span>
       )}
-
-      <span className=" absolute text-lg flex mx-auto  justify-center  items-center gap-2 ">
+      <span className="absolute text-lg flex mx-auto justify-center items-center gap-2 ">
         {hasIcon && <Svg />}
         {label}
         {isSelect && (
-          <span className=" absolute flex mx-auto    justify-center  items-center gap-2 ">
+          <span className="absolute flex mx-auto justify-center items-center gap-2 ">
             <ArrowSvg />
           </span>
         )}

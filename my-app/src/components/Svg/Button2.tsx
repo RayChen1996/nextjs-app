@@ -5,7 +5,7 @@ type FbSvgProps = JSX.IntrinsicElements["svg"];
 function SvgComponent(props: FbSvgProps) {
   return (
     <svg
-      width="97"
+      width="110"
       height="42"
       viewBox="0 0 97 42"
       fill="none"
